@@ -1,5 +1,19 @@
 # reactjsdemo
-a simple demonstrating docker, nodejs, react etc. 
+A simple demonstrating docker, nodejs, react etc. 
+
+## Get up and running
+* Install Yarn and add the bin folder to PATH
+* Install NodeJS and make sure the npm command is on PATH
+* Clone this git repo: https://github.com/jbendsen/reactjsdemo.git (you may have done so already)
+* Run 'npm install' in the root of the repo (cd reactjsdemo)
+* Likewise run 'npm start'. NodeJS starts and serves the react web app at localhost:3000
+* Running app inside docker
+** docker build . -t jbendsen/reactjsdemo:v01 
+** docker run -p 8080:80 jbendsen/reactjsdemo:v01
+** test in browser: http://localhost:8080
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
